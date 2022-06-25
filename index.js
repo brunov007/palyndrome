@@ -1,9 +1,9 @@
 //Palyndrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
 
-const palyndromes = ['osso', 'aabbaa', 'na', 'jao', 'nabuco', 'nurses run', 'madam']
+const words = ['osso', 'aabbaa', 'na', 'jao', 'nabuco', 'nurses run', 'madam']
 
 //Return the array with palyndromes
-console.log(palyndromes.filter(item => isPalyndrome(item)))
+console.log(words.filter(item => isPalyndrome(item)))
 
 function isPalyndrome(item){
     const itemSplited = item.replace(/[^\w]/g, '').split('')
