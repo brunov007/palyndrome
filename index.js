@@ -9,7 +9,7 @@ function isPalyndrome(item){
     const itemSplited = item.replace(/[^\w]/g, '').split('')
     const itemSplitedSize = itemSplited.length
 
-    if(itemSplited.length%2 == 0){
+    if(itemSplitedSize%2 == 0){
         if(getSortedStringFromIndexes(itemSplited, 0, itemSplitedSize/2) == 
             getSortedStringFromIndexes(itemSplited, -1 * itemSplitedSize/2)){
                 return true
